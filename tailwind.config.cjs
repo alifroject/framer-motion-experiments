@@ -7,7 +7,23 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        // Body / general text fonts (modern, readable)
         poppins: ['Poppins', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
+        lato: ['Lato', 'sans-serif'],
+
+        // Headings / display fonts (formal, stylish)
+        montserrat: ['Montserrat', 'sans-serif'],
+        raleway: ['Raleway', 'sans-serif'],
+        oswald: ['Oswald', 'sans-serif'],
+
+        // Serif fonts (formal, classic feel)
+        merriweather: ['Merriweather', 'serif'],
+        playfair: ['Playfair Display', 'serif'],
+        crimson: ['Crimson Pro', 'serif'],
+
+        // Fun / accent fonts
         curly: ['Pacifico', 'cursive'],
       },
       fontSize: {
