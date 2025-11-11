@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom';
 import type React from 'react';
 import IconButton from '@mui/material/IconButton';
 
-
 import Brightness7Icon from '@mui/icons-material/Brightness7';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
+import ExploreDropdown from './ExploreDropdown';
 
 interface NavbarProps {
     // You can add props here in the future if needed
@@ -17,7 +17,7 @@ const Navbar: React.FC<NavbarProps> = ({ theme, toggleTheme }) => {
     return (
         <nav className="bg-blue-600 text-white shadow-lg">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between items-center h-16">
+                <div className="flex justify-between items-center h-16 font-poppins">
                     {/* Logo */}
                     <div className="flex-shrink-0">
                         <Link to="/" className="text-2xl font-bold">
@@ -27,18 +27,7 @@ const Navbar: React.FC<NavbarProps> = ({ theme, toggleTheme }) => {
 
                     {/* Navigation Links */}
                     <div className="flex gap-8">
-                        <Link
-                            to="/"
-                            className="hover:text-blue-200 transition-colors duration-200"
-                        >
-                            Home
-                        </Link>
-                        <Link
-                            to="/about"
-                            className="hover:text-blue-200 transition-colors duration-200"
-                        >
-                            About
-                        </Link>
+                        <ExploreDropdown />
                         <Link
                             to="/contact"
                             className="hover:text-blue-200 transition-colors duration-200"

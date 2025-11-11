@@ -2,8 +2,6 @@ import { useTheme } from "../../context/ThemeContext";
 
 
 export default function MainTop() {
-
-
     const { theme } = useTheme();
 
     const isDark = theme === "dark";
@@ -18,7 +16,7 @@ export default function MainTop() {
                 }`}
             >
                 <h1
-                    className={`text-3xl font-bold transition-colors duration-300 ${
+                    className={`text-3xl font-bold transition-colors duration-300 font-curly ${
                         isDark ? 'text-blue-400' : 'text-blue-800'
                     }`}
                 >
