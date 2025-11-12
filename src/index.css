@@ -2,15 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Make html and body fully fill viewport and prevent bouncing */
+/* Make html and body fully fill viewport and prevent double scrollbars
+   We keep html/body non-scrollable and enable scrolling on the React root (#root).
+   This avoids having both the window and an inner container scrollable at once. */
 html, body {
   margin: 0;
   padding: 0;
-             /* prevent any horizontal overflow */
-  overflow-x: auto;        /* hide horizontal scroll */
-  overflow-y: auto;          /* allow vertical scroll */
-  overscroll-behavior-y: none; 
-  -webkit-overflow-scrolling: auto; 
+  overflow: hidden; /* prevent window scroll — app handles scrolling inside #root */
+  overscroll-behavior-y: none;
+  -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -22,8 +22,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Make the React root a full-viewport scroll container */
 #root {
-  min-height: 100vh;       
-  width: 100%;             /* make React root full width */
-       /* enforce no horizontal scroll */
+  height: 100vh;
+  width: 100%;
+  overflow-y: auto; /* single scrollbar lives here */
+  -webkit-overflow-scrolling: touch;
 }
