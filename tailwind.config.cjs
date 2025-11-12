@@ -27,16 +27,27 @@ module.exports = {
         curly: ['Pacifico', 'cursive'],
       },
       fontSize: {
-        xs: ['0.75rem', { lineHeight: '1rem' }],
-        sm: ['0.875rem', { lineHeight: '1.25rem' }],
-        base: ['1rem', { lineHeight: '1.5rem' }],
-        lg: ['1.125rem', { lineHeight: '1.75rem' }],
-        xl: ['1.25rem', { lineHeight: '1.75rem' }],
-        '2xl': ['1.5rem', { lineHeight: '2rem' }],
-        '3xl': ['1.875rem', { lineHeight: '2.25rem' }],
-        '4xl': ['2.25rem', { lineHeight: '2.5rem' }],
-        '5xl': ['3rem', { lineHeight: '1' }],
+        xs: ['0.75rem', { lineHeight: '1rem' }],       // 12px / 16px
+        sm: ['0.875rem', { lineHeight: '1.25rem' }],   // 14px / 20px
+        base: ['1rem', { lineHeight: '1.5rem' }],      // 16px / 24px
+        lg: ['1.125rem', { lineHeight: '1.75rem' }],   // 18px / 28px
+        xl: ['1.25rem', { lineHeight: '1.75rem' }],    // 20px / 28px
+        '2xl': ['1.5rem', { lineHeight: '2rem' }],     // 24px / 32px
+        '3xl': ['1.875rem', { lineHeight: '2.25rem' }],// 30px / 36px
+        '4xl': ['2.25rem', { lineHeight: '2.5rem' }],  // 36px / 40px
+        '5xl': ['3rem', { lineHeight: '1.1' }],        // 48px / ~53px
+        '6xl': ['3.75rem', { lineHeight: '1.1' }],     // 60px / ~66px
+        '7xl': ['4.5rem', { lineHeight: '1.05' }],     // 72px / ~76px
+        '8xl': ['6rem', { lineHeight: '1.05' }],       // 96px / ~100px
+        '9xl': ['7rem', { lineHeight: '1.05' }],       // 112px / ~118px
+        '10xl': ['8rem', { lineHeight: '1.05' }],      // 128px / ~134px
+        '11xl': ['9rem', { lineHeight: '1.05' }],      // 144px / ~151px
+        '12xl': ['10rem', { lineHeight: '1.05' }],     // 160px / ~168px
+        '13xl': ['11rem', { lineHeight: '1.05' }],     // 176px / ~184px
+        '14xl': ['12rem', { lineHeight: '1.05' }],     // 192px / ~202px
+        '15xl': ['13rem', { lineHeight: '1.05' }],     // 208px / ~218px
       },
+
       fontWeight: {
         light: 300,
         normal: 400,
